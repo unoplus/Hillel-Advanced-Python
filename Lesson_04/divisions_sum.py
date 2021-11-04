@@ -30,7 +30,7 @@ def get_list_of_numbers(denominator: int) -> list:
     :param denominator: Number from file.
     :return: List with integers.
     """
-    list_with_numbers = [_ for _ in range(1, 101) if _ % denominator == 0]
+    list_with_numbers = [i for i in range(1, 101) if i % denominator == 0]
 
     return list_with_numbers
 
