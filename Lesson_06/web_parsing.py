@@ -29,7 +29,6 @@ def parse_cookies(query: str) -> dict:
     params = {}
     for item in query.split(';'):
         params.update(i.split('=', 1) for i in item.split())
-    print(params)
 
     return params
 
