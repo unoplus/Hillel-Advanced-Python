@@ -1,2 +1,2 @@
 # LESSON EIGHT
-_Create base site with Bootstrap_
+_Create basic site with Bootstrap_
