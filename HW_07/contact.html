@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Контактная информация">
+    <meta name="description" content="Страница для связи с Futurama">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Контакты</title>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">Расписание Futurama</a> |
+        <a href="about.html">О Futurama</a> |
+        <a href="contact.html" class="isDisabled">Контакты</a>
+    </nav>
+    <hr>
+    <header class="header">Связаться с Futurama</header>
+    <form class="feedback" id="reused_form" >
+        <p class="firstname">
+            <input name="firstname" type="text" class="feedback-input" required placeholder="Фамилия" id="firstname" />
+        </p>
+        <p class="name">
+            <input name="name" type="text" class="feedback-input" required placeholder="Имя" id="name" />
+        </p>
+        <p class="email">
+            <input name="email" type="email" required class="feedback-input" id="email" placeholder="Email" />
+        </p>
+        <p class="message_type">
+            <select id="message_type" name="message_type" class="feedback-input">
+                <option value="" disabled selected>Выберите тип сообщения</option>
+                <option value="message">Сообщение</option>
+                <option value="proposal">Предложение</option>
+                <option value="feedback">Обратная связь</option>
+            </select>
+        </p>
+        <p class="response">
+            <label for="response" class="checkbox">
+                <input name="response" type="checkbox"  id="response">
+                Получить ответ по email
+            </label>
+        </p>
+        <p class="text">
+            <textarea name="message" class="feedback-input" id="comment" placeholder="Сообщение"  cols="50" rows="6" maxlength="300" wrap="hard"></textarea>
+        </p>
+        <div class="submit">
+            <button type="submit" class="button-green">Отправить сообщение</button>
+            <button type="reset"  class="button-green" value="Reset">Очистить форму</button>
+        </div>
+    </form>
+    <footer class="footer">Futurama 2021-2022 &#169;</footer>
+</body>
+</html>
