@@ -1,0 +1,31 @@
+.header {
+    background-color: #800000;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.menu {
+    margin-top: 75px;
+}
+
+.mean {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer {
+    background-color: #800000;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    line-height: 25px;
+}
