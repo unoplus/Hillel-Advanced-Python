@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+    mean
+{% endblock title%}
+
+{% block container %}
+    <h2>Some CSV magic</h2>
+    <ul class="mean">
+    {% for key, value in mean.items() %}
+        <li>{{ key }} {{ value }}</li>
+    {% endfor %}
+    </ul>
+{% endblock container %}
