@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+    user-info
+{% endblock title%}
+
+{% block container %}
+    <h2>Some fake staff</h2>
+    <table class="user_table" border="5">
+        <thead>
+            <tr>
+                <th>user</th>
+                <th>email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for key, value in users.items() %}
+                <tr>
+                    <td>{{ key }}</td>
+                    <td>{{ value }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock container %}
