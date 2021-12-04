@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}
+    requirements
+{% endblock title%}
+
+{% block container %}
+    <h2>My requirements</h2>
+    {% for line in some_list -%}
+       {{ line }}</br>
+    {% endfor %}
+{% endblock container %}
