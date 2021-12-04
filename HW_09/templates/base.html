@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Контактная информация">
+    <meta name="description" content="Страница для связи с Futurama">
+    <link rel="stylesheet" href={{ url_for("static", filename="style.css") }}>
+    <style></style>
+    <title>{% block title %}{{ title }}{% endblock title%}</title>
+</head>
+<body>
+    <header class="header">Flask - проба пера!</header>
+
+{% include "menu.html" %}
+
+{% block container %}
+
+    <h1>Default text in block...</h1>
+
+{% endblock container %}
+
+    <footer class="footer">Futurama 2021-2022 &#169;</footer>
+</body>
+</html>
