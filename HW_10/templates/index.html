@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block keywords %}Расписание занятий{% endblock keywords %}
+
+{% block description %}Информация о занятиях Futurama в hillel{% endblock description %}
+
+{% block title %}
+    Index
+{% endblock title%}
+
+{% block header %}
+    Информация о занятиях Futurama
+{% endblock header %}
+
+{% block container %}
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Дата</th>
+                    <th scope="col">Количество домашних заданий</th>
+                    <th scope="col">Продолжительность занятия</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dict in data %}
+                    <tr class="odd_rows">
+                    {% for key, value in dict.items() %}
+                        <td>{{ value }}</td>
+
+                    {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock container %}
