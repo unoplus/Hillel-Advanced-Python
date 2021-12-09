@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block keywords %}Информация о прохождении курсов студента Futurama в компьютерной школе  hillel{% endblock keywords %}
+
+{% block description %}Сайт посвящен студенту компьютерной школы hillel, Futurama{% endblock description %}
+
+{% block title %}
+    Main Page
+{% endblock title%}
+
+{% block header %}
+    Информация о Futurama
+{% endblock header %}
+
+{% block container %}
+<div class="row">
+    <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+            <img class="img" src="{{ url_for('static', filename='image/photo.jpg') }}" alt="Фото Futurama">
+        </div>
+    </div>
+    <div class="col-12">
+        <ul class="about">
+            {% for text in some_text %}
+                <li>{{ text }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock container %}
