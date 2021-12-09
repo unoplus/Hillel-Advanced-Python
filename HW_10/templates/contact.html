@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block keywords %}Контактная информация{% endblock keywords %}
+
+{% block description %}Страница для связи с Futurama{% endblock description %}
+
+{% block title %}
+    Contact
+{% endblock title%}
+
+{% block header %}
+    Связаться с Futurama
+{% endblock header %}
+
+{% block container %}
+    <h1 class="contact">Привет, друг! Если ты что-то мне хочешь сказать, заполни форму ниже и отправь!</h1>
+    <div class="col-6 form-group bg-group">
+        <form class="feedback" method="post">
+            <div class="row">
+                <div class="form-group col-12">
+                    <input type="text" class="form-control-lg" required
+                           placeholder="Фамилия" id="firstname" name="firstname"/>
+                </div>
+                <div class="form-group col-12">
+                    <input type="text" class="form-control-lg" required
+                           placeholder="Имя" id="lastname" name="lastname"/>
+                </div>
+                <div class="form-group col-12">
+                    <input type="email" class="form-control-lg"
+                           id="email"
+                           placeholder="name@example.com" name="email">
+                </div>
+
+                <div class="form-group col-12">
+                    <select id="message_type" name="message_type" class="form-control-lg">
+                        <option value="" disabled selected>Выберите тип сообщения</option>
+                        <option value="message">Сообщение</option>
+                        <option value="proposal">Предложение</option>
+                        <option value="feedback">Обратная связь</option>
+                    </select>
+                </div>
+                <div class="form-group col-12 bg-check">
+                    <input name="response" type="checkbox" id="response" class="form-check-input">
+                    <label for="response" class="form-check-label" id="check_label">
+                        Получить ответ по email
+                    </label>
+                </div>
+                <div class="form-group col-12 bg-textarea">
+                    <textarea name="user_message" class="form-control-lg" id="user_message" cols="50" rows="6" maxlength="300" wrap="hard" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="form-group col-12">
+                    <button type="submit" class="btn btn-primary float-left">Отправить сообщение</button>
+                    <button type="reset" class="btn btn-primary float-right">Очистить форму</button>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock container %}
