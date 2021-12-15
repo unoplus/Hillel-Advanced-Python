@@ -84,6 +84,6 @@ def write_file(some_dict: dict) -> None:
 
 
 if __name__ == '__main__':
-    questions = read_file('source/source1.txt')
+    questions = read_file('source/source.txt')
     answers = start_poll(questions)
     write_file(answers)
