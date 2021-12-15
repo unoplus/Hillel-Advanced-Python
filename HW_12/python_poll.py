@@ -17,7 +17,7 @@ def read_file(some_file: str) -> list:
         return error
 
 
-def check_input(some_input: str) -> bool:
+def _check_input(some_input: str) -> bool:
     """
     This function checks the user input against conditions. Must be a number
     in the range [0, 5].
@@ -59,7 +59,7 @@ def start_poll(some_list: list) -> dict:
             print(instruction)
             print(question)
             user_answer = input('Type your answer: ')
-            if check_input(user_answer):
+            if _check_input(user_answer):
                 temp_dict = {question: user_answer}
                 break
             else:
