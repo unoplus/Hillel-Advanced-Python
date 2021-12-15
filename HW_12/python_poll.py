@@ -1,4 +1,5 @@
 # Create by Bender
+import sys
 
 
 def read_file(some_file: str) -> list:
@@ -13,8 +14,8 @@ def read_file(some_file: str) -> list:
             text_data = file.read().split('\n')
             return text_data
     except FileNotFoundError as e:
-        error = [e]
-        return error
+        print(e)
+        sys.exit(0)
 
 
 def _check_input(some_input: str) -> bool:
@@ -83,6 +84,6 @@ def write_file(some_dict: dict) -> None:
 
 
 if __name__ == '__main__':
-    questions = read_file('source/source.txt')
+    questions = read_file('source/source1.txt')
     answers = start_poll(questions)
     write_file(answers)
