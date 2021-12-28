@@ -1,0 +1,23 @@
+# PyCharm IDE
+.idea/
+
+# VSCode IDE
+.vscode/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Environments
+venv/
+
+# pyenv
+.python-version
+
+# ENV
+.env
